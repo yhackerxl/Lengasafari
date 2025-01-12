@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lenga Adventure Safari</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('lenga.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .about-content {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .about-content h2 {
+            font-size: 28px;
+            color: #006400;
+            margin-bottom: 15px;
+        }
+        .about-content p {
+            font-size: 16px;
+            color: #555;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 20px;
+            color: #006400;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+        .feedback-form {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .feedback-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004d00;
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            background-color: #FA4616;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .feedback-form button:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            text-align: center;
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>About Lenga Adventure Safari</h1>
+        <p>Discover the passion and purpose behind our safari adventures.</p>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>
+                Lenga Adventure Safari is a trusted name in Tanzanian tourism, specializing in offering unique and personalized safari experiences. Our mission is to connect people with the stunning landscapes and wildlife of Tanzania, creating memories that last a lifetime.
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="mission-icon.png" alt="Mission">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide unmatched safari experiences that foster a deep connection with nature and local cultures.
+                </p>
+            </div>
+            <div class="card">
+                <img src="vision-icon.png" alt="Vision">
+                <h3>Our Vision</h3>
+                <p>
+                    To be the leading provider of ethical and sustainable tourism in Tanzania.
+                </p>
+            </div>
+            <div class="card">
+                <img src="values-icon.png" alt="Values">
+                <h3>Our Values</h3>
+                <p>
+                    Integrity, sustainability, community empowerment, and a passion for exploration.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+        <div class="feedback-form">
+            <h2>We Value Your Feedback</h2>
+            <form action="send_feedback.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your feedback here" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: +255 628 068 380 | <a href="mailto:info@lengaadventuresafari.com">info@lengaadventuresafari.com</a></p>
+        <p>Arusha, Tanzania</p>
+        <p>Copyright 2025 © All Rights Reserved Lenga Adventure Safari</p>
+    </footer>
+</body>
+</html>

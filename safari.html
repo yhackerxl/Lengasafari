@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Packages - Lenga Adventure Safari</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        /* Header */
+        header {
+            background-color: #006400; /* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        /* Cards Section */
+        section {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #006400; /* Dark Green */
+            margin-bottom: 30px;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #004d00; /* Darker Green */
+        }
+        .card-desc {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .card-price {
+            font-size: 16px;
+            color: #FA4616; /* Orange */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: #FA4616; /* Orange */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #e67e22;
+        }
+        .button-secondary {
+            background-color: #004d00; /* Darker Green */
+        }
+        .button-secondary:hover {
+            background-color: #003300;
+        }
+        /* Footer */
+        footer {
+            background-color: #006400; /* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #FA4616;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Safari Packages</h1>
+        <p>Explore the beauty of Tanzania with our tailored safari adventures</p>
+    </header>
+
+    <!-- Safari Cards Section -->
+    <section>
+        <h2 class="section-title">Available Safaris</h2>
+        <div class="cards-container">
+            <!-- Safari 1 -->
+            <div class="card">
+                <img src="m.jpg" alt="Safari 1">
+                <div class="card-content">
+                    <h3 class="card-title">6 Days Tanzania Migration Safari</h3>
+                    <p class="card-desc">Witness the breathtaking Great Migration in Serengeti National Park.</p>
+                    <p class="card-price">Price: $2,500 per person</p>
+                    <div class="button-container">
+                        <a href="#" class="button">Book Now</a>
+                        <a href="safari1.html" class="button button-secondary">See More</a>
+                    </div>
+                </div>
+            </div>
+           <!-- Safari 2 -->
+            <div class="card">
+                <img src="m.jpg" alt="Safari 2">
+                <div class="card-content">
+                    <h3 class="card-title">7 Days Mid Luxury Safari</h3>
+                    <p class="card-desc">Enjoy a luxurious safari experience exploring Tanzania's wildlife.</p>
+                    <p class="card-price">Price: $3,000 per person</p>
+                    <div class="button-container">
+                        <a href="#" class="button">Book Now</a>
+                        <a href="safari2.html" class="button button-secondary">See More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Safari 3 -->
+            <div class="card">
+                <img src="m.jpg" alt="Safari 3">
+                <div class="card-content">
+                    <h3 class="card-title">5 Days Zanzibar Beach Holiday</h3>
+                    <p class="card-desc">Relax on Zanzibar's pristine beaches and enjoy island life.</p>
+                    <p class="card-price">Price: $1,800 per person</p>
+                    <div class="button-container">
+                        <a href="#" class="button">Book Now</a>
+                        <a href="safari3.html" class="button button-secondary">See More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Safari 4 -->
+            <div class="card">
+                <img src="m.jpg" alt="Safari 4">
+                <div class="card-content">
+                    <h3 class="card-title">8 Days Kilimanjaro Climb (Machame Route)</h3>
+                    <p class="card-desc">Challenge yourself on the famous Machame route to Kilimanjaro's peak.</p>
+                    <p class="card-price">Price: $2,700 per person</p>
+                    <div class="button-container">
+                        <a href="#" class="button">Book Now</a>
+                        <a href="safari4.html" class="button button-secondary">See More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Safari 5 -->
+            <div class="card">
+                <img src="m.jpg" alt="Safari 5">
+                <div class="card-content">
+                    <h3 class="card-title">10 Days Best of Tanzania Safari</h3>
+                    <p class="card-desc">Explore Tanzania's iconic parks, including Serengeti and Ngorongoro Crater.</p>
+                    <p class="card-price">Price: $4,000 per person</p>
+                    <div class="button-container">
+                        <a href="#" class="button">Book Now</a>
+                        <a href="safari5.html" class="button button-secondary">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: +255 628 068 380 | <a href="mailto:info@lengaadventuresafari.com">info@lengaadventuresafari.com</a></p>
+        <p>Arusha, Tanzania</p>
+        <p>Copyright 2025 © All Rights Reserved Lenga Adventure Safari</p>
+    </footer>
+</body>
+</html>
