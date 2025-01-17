@@ -75,12 +75,6 @@
             margin-bottom: 15px;
             color: #555;
         }
-        .card-price {
-            font-size: 16px;
-            color: #FA4616; /* Orange */
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
         .button-container {
             display: flex;
             justify-content: space-between;
@@ -121,6 +115,85 @@
         footer a:hover {
             text-decoration: underline;
         }
+        /* Safari Details */
+        .safari-details {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .safari-details h3 {
+            color: #006400;
+        }
+        .safari-details p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        #plan-your-trip {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#plan-your-trip h2 {
+    font-size: 28px;
+    color: #006400; /* Dark Green */
+    margin-bottom: 10px;
+}
+
+#plan-your-trip p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#plan-your-trip form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#plan-your-trip label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#plan-your-trip input, 
+#plan-your-trip textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#plan-your-trip input:focus, 
+#plan-your-trip textarea:focus {
+    border-color: #006400; /* Dark Green */
+}
+
+#plan-your-trip .submit-button {
+    background-color: #006400; /* Dark Green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#plan-your-trip .submit-button:hover {
+    background-color: #004d00; /* Darker Green */
+}
     </style>
 </head>
 <body>
@@ -128,7 +201,7 @@
     <header>
         <h1>Safari Packages</h1>
         <p>Explore the beauty of Tanzania with our tailored safari adventures</p>
-    </header>
+        </header>
 
     <!-- Safari Cards Section -->
     <section>
@@ -136,75 +209,144 @@
         <div class="cards-container">
             <!-- Safari 1 -->
             <div class="card">
-                <img src="m.jpg" alt="Safari 1">
+                <img src="cross.jpg" alt="Safari 1">
                 <div class="card-content">
                     <h3 class="card-title">6 Days Tanzania Migration Safari</h3>
                     <p class="card-desc">Witness the breathtaking Great Migration in Serengeti National Park.</p>
-                    <p class="card-price">Price: $2,500 per person</p>
                     <div class="button-container">
-                        <a href="#" class="button">Book Now</a>
-                        <a href="safari1.html" class="button button-secondary">See More</a>
+                        <a href="https://wa.me/255614197177" class="button">Book Now</a>
+                        <a href="#safari1" class="button button-secondary">See More</a>
                     </div>
                 </div>
             </div>
-           <!-- Safari 2 -->
+            <!-- Safari 2 -->
             <div class="card">
-                <img src="m.jpg" alt="Safari 2">
+                <img src="34369.jpg" alt="Safari 2">
                 <div class="card-content">
                     <h3 class="card-title">7 Days Mid Luxury Safari</h3>
                     <p class="card-desc">Enjoy a luxurious safari experience exploring Tanzania's wildlife.</p>
-                    <p class="card-price">Price: $3,000 per person</p>
                     <div class="button-container">
-                        <a href="#" class="button">Book Now</a>
-                        <a href="safari2.html" class="button button-secondary">See More</a>
+                        <a href="https://wa.me/255614197177" class="button">Book Now</a>
+                        <a href="#safari2" class="button button-secondary">See More</a>
                     </div>
                 </div>
             </div>
             <!-- Safari 3 -->
             <div class="card">
-                <img src="m.jpg" alt="Safari 3">
+                <img src="8287.jpg" alt="Safari 3">
                 <div class="card-content">
                     <h3 class="card-title">5 Days Zanzibar Beach Holiday</h3>
                     <p class="card-desc">Relax on Zanzibar's pristine beaches and enjoy island life.</p>
-                    <p class="card-price">Price: $1,800 per person</p>
                     <div class="button-container">
-                        <a href="#" class="button">Book Now</a>
-                        <a href="safari3.html" class="button button-secondary">See More</a>
+                        <a href="https://wa.me/255614197177" class="button">Book Now</a>
+                        <a href="#safari3" class="button button-secondary">See More</a>
                     </div>
                 </div>
             </div>
             <!-- Safari 4 -->
             <div class="card">
-                <img src="m.jpg" alt="Safari 4">
+                <img src="44395.jpg" alt="Safari 4">
                 <div class="card-content">
                     <h3 class="card-title">8 Days Kilimanjaro Climb (Machame Route)</h3>
                     <p class="card-desc">Challenge yourself on the famous Machame route to Kilimanjaro's peak.</p>
-                    <p class="card-price">Price: $2,700 per person</p>
                     <div class="button-container">
-                        <a href="#" class="button">Book Now</a>
-                        <a href="safari4.html" class="button button-secondary">See More</a>
+                        <a href="https://wa.me/255614197177" class="button">Book Now</a>
+                        <a href="#safari4" class="button button-secondary">See More</a>
                     </div>
                 </div>
             </div>
             <!-- Safari 5 -->
             <div class="card">
-                <img src="m.jpg" alt="Safari 5">
+                <img src="34369.jpg" alt="Safari 5">
                 <div class="card-content">
                     <h3 class="card-title">10 Days Best of Tanzania Safari</h3>
                     <p class="card-desc">Explore Tanzania's iconic parks, including Serengeti and Ngorongoro Crater.</p>
-                    <p class="card-price">Price: $4,000 per person</p>
                     <div class="button-container">
-                        <a href="#" class="button">Book Now</a>
-                        <a href="safari5.html" class="button button-secondary">See More</a>
+                        <a href="https://wa.me/255614197177" class="button">Book Now</a>
+                        <a href="#safari5" class="button button-secondary">See More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
+        <!-- Detailed Descriptions -->
+     <section>
+    <div class="safari-details" id="safari1">
+        <h3>6 Days Tanzania Migration Safari</h3>
+        <p>Embark on a once-in-a-lifetime journey to witness the spectacular Great Migration in the Serengeti. Imagine thousands of wildebeests and zebras crossing rivers and roaming the vast plains, accompanied by predators like lions and cheetahs. This safari combines thrilling game drives with stays in luxury lodges and tented camps, offering breathtaking views and unparalleled comfort. You'll also experience sunrise safaris, where the golden rays of the sun illuminate the wilderness, making for incredible photo opportunities. Our experienced guides will ensure you capture the essence of this natural wonder and leave with unforgettable memories.</p>
+    </div>
+    <div class="safari-details" id="safari2">
+        <h3>7 Days Mid Luxury Safari</h3>
+        <p>Immerse yourself in the beauty of Tanzania while enjoying a touch of luxury. This safari takes you through iconic destinations like Ngorongoro Crater, a UNESCO World Heritage Site teeming with wildlife, and Tarangire National Park, known for its majestic elephants and baobab trees. Relax in carefully selected high-end lodges with premium amenities, indulge in delicious gourmet meals, and enjoy private, guided tours tailored to your preferences. Whether it's a peaceful evening by the fire or the thrill of spotting the Big Five, this safari is crafted to exceed your expectations.</p>
+    </div>
+    <div class="safari-details" id="safari3">
+        <h3>5 Days Zanzibar Beach Holiday</h3>
+        <p>Escape to paradise on the idyllic island of Zanzibar, where pristine white-sand beaches meet crystal-clear waters. This package includes stays at luxurious beachfront resorts, where you can unwind with world-class spa treatments or sip cocktails while watching the sunset. Dive into the rich culture with tours of Stone Town, a historic city filled with vibrant markets and stunning architecture. For adventure seekers, enjoy snorkeling, scuba diving, or a trip to the spice plantations. Zanzibar offers the perfect blend of relaxation, culture, and adventure, making it an unforgettable getaway.</p>
+    </div>
+    <div class="safari-details" id="safari4">
+        <h3>8 Days Kilimanjaro Climb (Machame Route)</h3>
+        <p>Conquer Africa's highest peak with our expertly guided 8-day Kilimanjaro adventure via the scenic Machame Route. Known as the "Whiskey Route," it offers a gradual ascent with stunning views of lush rainforests, rugged moorlands, and glacial landscapes. Our experienced mountain guides will ensure your safety and success as you take on this thrilling challenge. Along the way, you'll camp under starlit skies and wake up to mesmerizing sunrises. Whether you're an experienced climber or a first-timer, reaching the summit of Mount Kilimanjaro is a rewarding achievement that will leave you in awe of nature's grandeur.</p>
+    </div>
+    <div class="safari-details" id="safari5">
+        <h3>10 Days Best of Tanzania Safari</h3>
+        <p>Discover the ultimate Tanzanian adventure as you visit the country's most iconic parks and reserves. This 10-day safari includes the Serengeti, where you'll witness the Great Migration, the Ngorongoro Crater with its dense population of wildlife, and Lake Manyara, famous for its flamingos and tree-climbing lions. You'll also explore Tarangire National Park, known for its large herds of elephants. Stay in exclusive lodges and enjoy expertly guided game drives, bush walks, and cultural visits to local Maasai villages. This comprehensive package showcases the best of Tanzania's wildlife, landscapes, and rich traditions.</p>
+    </div>
+</section>
+<section id="plan-your-trip">
+    <h2>Plan Your Trip</h2>
+    <p>Fill out the form below, and we’ll help you plan your dream safari adventure. Once you submit the details, you’ll be directed to WhatsApp for further assistance!</p>
+    <form id="trip-form" onsubmit="redirectToWhatsApp(event)">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Which destination are you planning to visit?" required>
+
+        <label for="travel-date">Preferred Travel Date:</label>
+        <input type="date" id="travel-date" name="travel-date" required>
+
+        <label for="message">Additional Details:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Share more about your trip preferences..."></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</section>
+
+<script>
+    function redirectToWhatsApp(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const destination = document.getElementById('destination').value;
+        const travelDate = document.getElementById('travel-date').value;
+        const message = document.getElementById('message').value;
+
+        const whatsappMessage = `
+Hello, I would like to plan a trip with Lenga Adventure Safari. 
+Here are my details:
+- Name: ${name}
+- Email: ${email}
+- Phone: ${phone}
+- Destination: ${destination}
+- Travel Date: ${travelDate}
+- Additional Details: ${message}
+`;
+
+        const whatsappUrl = `https://wa.me/255614197177?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+</script>
     <!-- Footer -->
     <footer>
-        <p>Contact us: +255 628 068 380 | <a href="mailto:info@lengaadventuresafari.com">info@lengaadventuresafari.com</a></p>
+        <p>Contact us: +255 614 197 177 | <a href="mailto:info@lengaadventuresafari.com">info@lengaadventuresafari.com</a></p>
         <p>Arusha, Tanzania</p>
         <p>Copyright 2025 © All Rights Reserved Lenga Adventure Safari</p>
     </footer>
